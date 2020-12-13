@@ -1,0 +1,53 @@
+.c-navigation{
+    .nav-list{
+        display: flex;
+        li{
+            a{
+                display: block;
+                padding: 0 15px;
+                color: #333;
+
+                &.active{
+                    color: #f00;
+                }
+
+                &.hover{
+                    background-color: #ddd;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (min-width:768px){
+    .c-header{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .nav-list{
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        li{
+            margin: 0;
+        }
+        .nav-links{
+            margin-left: 40px;
+        }
+
+        .c-menu{
+            display: none;
+        }
+    }
+
+    
+}
